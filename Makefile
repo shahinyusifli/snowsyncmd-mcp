@@ -15,8 +15,8 @@ tag:
 	git push origin v$(VERSION)
 
 release: tag
-	@echo "Go to https://github.com/shahinyusifli/snowsyncmd-mcp/releases/new"
-	@echo "Select tag v$(VERSION) and publish — GitHub Actions will push to PyPI automatically."
+	@echo "Tag v$(VERSION) pushed."
+	@echo "Create the release at: https://github.com/shahinyusifli/snowsyncmd-mcp/releases/new"
 
 clean:
 	rm -rf dist/ *.egg-info
