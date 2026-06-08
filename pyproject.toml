@@ -7,18 +7,20 @@ requires-python = ">=3.11"
 license = { text = "MIT" }
 keywords = ["snowflake", "mcp", "claude", "schema", "documentation"]
 
+[project.urls]
+Homepage   = "https://github.com/shahinyusifli/snowsyncmd-mcp"
+Repository = "https://github.com/shahinyusifli/snowsyncmd-mcp"
+PyPI       = "https://pypi.org/project/snowsyncmd-mcp"
+Changelog  = "https://github.com/shahinyusifli/snowsyncmd-mcp/blob/main/CHANGELOG.md"
+
+[project.scripts]
+snowsyncmd-mcp = "snowsyncmd_mcp:main"
+
 dependencies = [
     "mcp>=1.0.0",
     "snowflake-connector-python>=3.0.0",
     "python-dotenv>=1.0.0",
 ]
-
-[project.scripts]
-snowsyncmd-mcp = "snowsyncmd_mcp:main"
-
-[project.urls]
-Homepage   = "https://github.com/your-org/snowsyncmd"
-PyPI       = "https://pypi.org/project/snowsyncmd-mcp"
 
 [build-system]
 requires      = ["hatchling"]
